@@ -1,5 +1,53 @@
 .car {
-    width: 100%;
-    height: 500px;
+  width: 100%;
+  height: 100%;
 }
 
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Home, About ki tarah left align */
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .d-flex {
+    width: 100%;
+    margin-bottom: 10px; /* Search aur Login ke beech space */
+  }
+
+  .mx-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Login, Signup bhi left align */
+    gap: 10px; /* Login aur Signup ke beech gap */
+    width: 100%;
+  }
+
+  .mx-2 a {
+    width: 100%; /* Link full width le */
+  }
+
+  .mx-2 button {
+    text-align: left; /* Button ka text bhi left align */
+    width: auto; /* Full width hatakar auto kar diya */
+    font-size: 14px; /* Button ka text chhota */
+    padding: 5px 10px; /* Button ka size bhi chhota */
+  }
+}
+
+.carousel-caption {
+    position: absolute !important;
+    top: 60% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
